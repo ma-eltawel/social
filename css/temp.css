@@ -1,0 +1,120 @@
+/* start global */
+body{
+    background-color: #f0ecff;
+}
+.nav-item{
+    cursor: pointer;
+}
+/* end global */
+/* start load */
+.loader {
+    position: fixed;
+    top: calc(50% - 68px);
+    left: calc(50% - 68px);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 16px solid #ddd;
+    border-top-color: #2468dd;
+    animation: spin 2s linear infinite;
+    z-index: 8;
+}
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+/* end load */
+/* start posts */
+.card .card-header img{
+    width: 50px;
+    height: 50px;
+}
+.card .card-header .time, .card .react i{
+    color: #666;
+}
+#posts .card-body{
+    cursor: pointer;
+}
+.card .bottom button{
+    color: white;
+    background-color: gray;
+}
+.card .comments, .card .add-com{
+    background-color: #ddd;
+}
+.card .comments img{
+    width: 40px;
+    height: 40px;
+}
+.card .comments p{
+    padding: 15px;
+    margin: 10px 20px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+.card .add-com{
+    padding: 30px 35px;
+}
+.card .add-com button{
+    margin: 0 8px;
+}
+/* end posts */
+/* start login */
+#alert{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    z-index: 4;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+}
+.profile span{
+    font-weight: 600;
+    margin: 0 30px 0 5px;
+}
+/* end login */
+/* start add post */
+.add-but{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 4%;
+    bottom: 6%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.2);
+    z-index: 4;
+}
+#addForm #body{
+    height: 100px;
+    resize: none;
+}
+/* end add post */
+/* start profile page */
+#profile-image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.numbers{
+    color: #888;
+    font-weight: 400;
+}
+.numbers span{
+    color: #666;
+    font-size: 48px;
+}
+/* end rofile page */
